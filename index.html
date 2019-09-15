@@ -140,10 +140,13 @@
                 }).go()
             }
 
+            var width = $(document).width();
+
             $("body").jParticle({
             // OPTIONS
             particlesNumber: 200,
             height: 700,
+            width: width,
             color: "#00000",
             particle: {
                 minSize: 2,
