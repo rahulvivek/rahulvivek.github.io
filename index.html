@@ -9,19 +9,23 @@
     </head>
 
     <body>
+        <div class="loader" id="loader">
+            <img src="./images/loader2.gif" alt="">
+        </div>
+        <div class="content">
         <header>
             <div class="head-wrap">
                 <h1 class="logo">Rahul Vivek</h1>
                 <ul class="nav">
                     <li> <a href="#">Home</a> </li>
-                    <li><a href="https://medium.com/@rahulvivek123">Blog</a></li>
-                    <li><a href="#">Resume</a></li>
+                    <li><a target="_blank" href="https://medium.com/@rahulvivek123">Blog</a></li>
+                    <li><a target="_blank" href="./resume.html">Resume</a></li>
                 </ul>
                 <div class="clear-fix"></div>
             </div>
             <div class="hero-text">
                 <h1>Design. <br> Code. <br>  Coffee.</h1>
-                <button class="resume-btn">Resume</button>
+                <button class="resume-btn">Hire Me</button>
             </div>
         </header>
         <article class="experience">
@@ -103,11 +107,13 @@
         </article>
         <footer>
             <ul class="social-links">
-                <li>Instagram</li>
-                <li>linkedIn</li>
-                <li>Twitter</li>
+                <li><a target="_blank" href="https://www.instagram.com/rahulvivek/">Instagram</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/rahul-vivek">linkedIn</a></li>
+                <li><a target="_blank" href="https://twitter.com/rahul_vivek">Twitter</a></li>
             </ul>
         </footer>
+
+        </div>
 
         <script src="./scripts/jquery-3.4.1.min.js"></script>
         <script src="./scripts/typeit.min.js"></script>
@@ -115,7 +121,25 @@
         <script src="./scripts/jparticle.jquery.min.js"></script>
         <script src="./scripts/jquery.bloodforge.smoke-effect.js"></script>
         <script src="./scripts/owl.carousel.min.js"></script>
+        <script src="./scripts/sonic.js"></script>
         <script>
+
+            $('.content').hide()
+
+            setTimeout(function() {
+                $('.loader').hide()
+                $('.content').show()
+
+                init();
+            }, 3000)
+            
+            var init = function() {
+                new TypeIt('.hero-text h1', {
+                    cursor:false,
+                    lifeLike: true
+                }).go()
+            }
+
             $("body").jParticle({
             // OPTIONS
             particlesNumber: 200,
@@ -135,10 +159,7 @@
                 autoplayTimeout: 3000,
             });
 
-            new TypeIt('.hero-text h1', {
-                cursor:false,
-                lifeLike: true
-            }).go()
+            
 
             var myEvents = [{
                 date: 'November 2017 - Present',
@@ -156,7 +177,7 @@
                 content: 'Web Developer - ​Trinity Mascot Consultancy Services Pvt. Ltd. Cochin'
                 },
                 {
-                date: 'April 2012 - July 2013',
+                date: 'April 2012 - July 2012',
                 content: 'Web Developer - ​Saltmangotree Creative Marketing Communications Pvt. Ltd. Cochin'
                 }
             ];

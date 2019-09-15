@@ -12,6 +12,26 @@ canvas {
     background: none !important;
 }
 
+.loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #18181f;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.loader img {
+    width: 40%;
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header {
     max-width: 1200px;
     margin: 0px auto;
@@ -228,6 +248,11 @@ footer  .social-links {
 footer  .social-links li {
     float: left;
     margin-right: 20px;
+}
+
+footer  .social-links li a {
+    color: #fff;
+    text-decoration: none
 }
 
 
