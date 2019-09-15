@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>Rahul Vivek</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/jquery.roadmap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="head-wrap">
+                <h1 class="logo">Rahul Vivek</h1>
+                <ul class="nav">
+                    <li> <a href="#">Home</a> </li>
+                    <li><a href="https://medium.com/@rahulvivek123">Blog</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+                <div class="clear-fix"></div>
+            </div>
+            <div class="hero-text">
+                <h1>Design. <br> Code. <br>  Coffee.</h1>
+                <button class="resume-btn">Resume</button>
+            </div>
+        </header>
+        <article class="experience">
+            <div class="content-wrap">
+                <h2>Great Works with <br> Great Organizations</h2>
+                <div id="timeline">
+
+                </div>
+
+            </div>
+        </article>
+        <!-- <article class="projects">
+            <div class="content-wrap">
+                <h2>Get an overview <br> of my latest projects</h2>
+
+                <div class="works-wrap">
+                    <ul class="works">
+                        <li class="work-box">
+                            <h5>Cira</h5>
+                            <p class="work-content">
+                                Chatbot framework for make custom chatbots
+                            </p>
+                        </li>
+                        <li class="work-box">
+                            <h5>HCAP</h5>
+                            <p class="work-content">
+                                Human resource management tool with advanced attendance and payroll management
+                            </p>
+                        </li>
+                        <li class="work-box">
+                            <h5>Online Pizza</h5>
+                            <p class="work-content">
+                                Online ordering application to order pizza.
+                            </p>
+                        </li>
+                    </ul>
+                    <span class="more-link">
+                        More
+                    </span>
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+        </article> -->
+        <!-- <article>
+            <div class="content-wrap">
+                <h2>Methodology I followed</h2>
+            </div>
+        </article> -->
+
+        <footer>
+            <ul class="social-links">
+                <li>Instagram</li>
+                <li>linkedIn</li>
+                <li>Twitter</li>
+            </ul>
+        </footer>
+
+        <script src="./scripts/jquery-3.4.1.min.js"></script>
+        <script src="./scripts/typeit.min.js"></script>
+        <script src="./scripts/jquery.roadmap.min.js"></script>
+        <script src="./scripts/jparticle.jquery.min.js"></script>
+        <script src="./scripts/jquery.bloodforge.smoke-effect.js"></script>
+        <script>
+            $("body").jParticle({
+            // OPTIONS
+            particlesNumber: 200,
+            height: 700,
+            color: "#00000",
+            particle: {
+                minSize: 2,
+                maxSize: 8,
+                speed: 120,
+            }
+            });
+            new TypeIt('.hero-text h1', {
+                cursor:false,
+                lifeLike: true
+            }).go()
+
+            var myEvents = [{
+                date: 'November 2017 - Present',
+                content: 'Lead Full Stack Developer​ ​- Cognicor Cochin'
+                },{
+                date: 'January 2017 - November 2017',
+                content: 'Senior JavaScript Engineer -​ CORRA Technology Cochin'
+                },
+                {
+                date: 'August 2013 - October 2016',
+                content: 'Senior Systems Developer - ​Kestrel Technologies LLC Dubai '
+                },
+                {
+                date: 'September 2012 - July 2013',
+                content: 'Web Developer - ​Trinity Mascot Consultancy Services Pvt. Ltd. Cochin'
+                },
+                {
+                date: 'April 2012 - July 2013',
+                content: 'Web Developer - ​Saltmangotree Creative Marketing Communications Pvt. Ltd. Cochin'
+                }
+            ];
+
+            myEvents = myEvents.reverse()
+
+            var _timeline_drawn = false
+
+
+            $(document).on('scroll', function() {
+                var st = $(this).scrollTop();
+                var ex_scroll_top = $('.experience').offset().top;
+                if(st > ex_scroll_top && !_timeline_drawn) {
+                    $('#timeline').roadmap(myEvents, {
+                        orientation: "horizontal"
+                    });
+                    _timeline_drawn = true;
+                }
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,219 @@
+html, body {
+    background: #232323;
+    /* width: 100%; */
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+canvas {
+    position: absolute;
+    top: 0px;
+    background: none !important;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0px auto;
+    color: #fff;
+    overflow: hidden;
+    min-height: 760px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+header canvas {
+    background: none !important;
+    position: absolute;
+    z-index: 0;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.head-wrap {
+    color: #fff;
+    z-index: 1;
+}
+
+
+.head-wrap h1 {
+    float: left;
+    position: relative;
+    left: 45px;
+}
+
+.nav li a {
+    color:#ababab;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+
+}
+
+.logo::before {
+    content: "R.";
+    width: 30px;
+    height: 30px;
+    background: #9c0101;
+    position: absolute;
+    left: -48px;
+    color: #fff;
+    padding: 5px;
+    line-height: 28px;
+}
+
+.head-wrap .nav {
+    float: right;
+    margin-left: 300px;
+    margin-top: 31px;
+    list-style-type: none;
+}
+
+.head-wrap .nav li {
+    float: left;
+    margin-left: 30px;
+
+}
+
+.hero-text {
+    font-size: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    float: left;
+    font-family: 'Noto Serif JP', serif;
+    margin-top: 10px;
+}
+.resume-btn {
+    position: absolute;
+    right: 200px;
+    top: 300px;
+    width: 200px;   
+    height: 50px;
+    color: #333;
+    font-size: 20px;
+    line-height: 46px;
+    background: #fff;
+    font-weight: bold;
+}
+
+.experience {
+    padding-top: 50px;
+    background: #454545;
+    padding-bottom: 50px;
+    min-height: 800px;
+}
+
+.experience h2 {
+    font-size: 45px;
+    margin-bottom: 65px;
+}
+
+.projects {
+    padding-top: 50px;
+    background: #454545;
+    padding-bottom: 50px;
+}
+
+.content-wrap {
+    max-width: 1200px;
+    margin: 0px auto;
+    color: #fff;
+    font-family: 'Noto Serif JP', serif;
+
+    overflow: hidden;
+    position: relative;
+
+    padding-bottom: 100px;
+}
+
+.projects h2 {
+    font-size: 45px;
+}
+
+
+.projects .works {
+    padding-top: 100px;
+    list-style-type: none;
+}
+
+
+.projects .works li {
+    background: #4c4c4c;
+    float: left;
+    margin-right: 86px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.work-box h5 {
+    text-align: center;
+    font-size: 30px;    
+    line-height: 1px;
+    padding-bottom: 54px;
+}
+
+.work-box p {
+    color:#1b1b1b;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.work-box p::before {
+    content: "a";
+    width: 200px;
+    height: 5px;
+    position: absolute;
+    background:#2f2f2f;
+    color: transparent;
+    top: -19px;
+}
+
+.projects .more-link {
+    width: 100px;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    left: 44%;
+    bottom: -3px;
+    text-align: center;
+    line-height: 42px;
+    font-weight: bold;
+    color: #000000
+}   
+
+footer {
+    color: #fff;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+footer  .social-links {
+    list-style-type: none;
+}
+
+
+footer  .social-links li {
+    float: left;
+    margin-right: 20px;
+}
+
+
+.roadmap.roadmap--orientation-horizontal .roadmap__events__event:after, .roadmap.roadmap--orientation-horizontal .roadmap__events__event:before {
+    background-color : #fff;
+}
+
+.roadmap.roadmap--orientation-horizontal .roadmap__events:after {
+    background-color: #fff;
+}
