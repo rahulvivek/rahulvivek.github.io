@@ -127,8 +127,10 @@
 
             $(document).on('scroll', function() {
                 var st = $(this).scrollTop();
-                var ex_scroll_top = $('.experience').offset().top;
-                if(st > ex_scroll_top && !_timeline_drawn) {
+                var ex_scroll_top = $('header').offset().top + $('header').innerHeight();
+                console.log(ex_scroll_top)
+                console.log(st + 300)
+                if((st + 300) > ex_scroll_top && !_timeline_drawn) {
                     $('#timeline').roadmap(myEvents, {
                         orientation: "horizontal"
                     });
