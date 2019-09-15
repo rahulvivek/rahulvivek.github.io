@@ -191,7 +191,28 @@ header canvas {
     line-height: 42px;
     font-weight: bold;
     color: #000000
-}   
+}  
+
+.skills {
+    padding-top: 95px;
+    background: #a7a7a7;
+    padding-bottom: 6px;
+}
+
+.skills h2 {
+    font-size: 45px;
+}
+
+.skills .item {
+    width: 200px;
+    padding: 5px;
+    background-color: #d6d6d6;
+    
+}
+
+.skills .item img {
+    width: 200px;
+}
 
 footer {
     color: #fff;

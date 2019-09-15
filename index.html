@@ -3,6 +3,8 @@
         <title>Rahul Vivek</title>
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/jquery.roadmap.min.css">
+        <link rel="stylesheet" href="./css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./css/owl.theme.default.min.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
 
@@ -69,6 +71,36 @@
             </div>
         </article> -->
 
+        <article class="skills">
+            <div class="content-wrap">
+                <h2>I am good in  </h2>
+                <div class="owl-carousel">
+                    <div class="item">
+                        <img src="./images/slider/Group 14@2x.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/Group 15@2x.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/Group 16@2x.png" alt="">
+                    </div>
+                        
+                    <div class="item">
+                        <img src="./images/slider/Group 17@2x.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider/Group 18@2x.png" alt="">
+                    </div> 
+                    <!-- <div class="item">
+                        <img src="./images/slider/Group 18@2x.png" alt="">
+                    </div>   -->
+                    <div class="item">
+                        <img src="./images/slider/Group 19@2x.png" alt="">
+                    </div> 
+                        
+                </div>
+            </div>
+        </article>
         <footer>
             <ul class="social-links">
                 <li>Instagram</li>
@@ -82,6 +114,7 @@
         <script src="./scripts/jquery.roadmap.min.js"></script>
         <script src="./scripts/jparticle.jquery.min.js"></script>
         <script src="./scripts/jquery.bloodforge.smoke-effect.js"></script>
+        <script src="./scripts/owl.carousel.min.js"></script>
         <script>
             $("body").jParticle({
             // OPTIONS
@@ -94,6 +127,14 @@
                 speed: 120,
             }
             });
+
+            $(".owl-carousel").owlCarousel({
+                items: 5,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+            });
+
             new TypeIt('.hero-text h1', {
                 cursor:false,
                 lifeLike: true
